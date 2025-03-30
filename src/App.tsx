@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Navbar from './Components/Navbar/Navbar';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from "./Pages/Home/Home"; 
+import Portfolio from "./Pages/Portfolio/Portfolio"; 
+import Games from "./Pages/Games/Games";
+import AboutMe from "./Pages/AboutMe/AboutMe";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+    return (
+      <Router>
+        <div className="App">
+          <Navbar />
+          <div className="content">
+            {/* Configuração das rotas */}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/games" element={<Games />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/about-me" element={<AboutMe />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+    );
+  }
+  
 export default App;

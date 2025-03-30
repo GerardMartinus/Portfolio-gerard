@@ -1,0 +1,19 @@
+@media (min-width: 780px){
+    .home-pop-up > .pop-up{
+        position: absolute;
+        width: calc(100vw - 55vw);
+        left: 25px;
+    
+    }
+
+
+}
+
+.card-stacks{
+    min-width: 250px !important;
+    min-height: 400px !important;
+}
+
+/* .home-pop-up{
+    height: 100vh;
+} */
