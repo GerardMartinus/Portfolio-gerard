@@ -25,7 +25,7 @@ const Footer = () => {
               width="30px"
             />
           </a>
-          <a href="gerardmartinus.itch.io" className="mx-2">
+          <a href="https://gerardmartinus.itch.io" className="mx-2">
             <img src={ItchLogo} alt="" className="rounded" width="30px" />
           </a>
         </div>

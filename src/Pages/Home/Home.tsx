@@ -59,8 +59,8 @@ function Home() {
             </div>
 
             <PopUp>
-              <div className="d-flex flex-column">
-                <div className="d-flex my-2">
+              <div className="row">
+                <div className="row">
                   <h4>About me</h4>
                 </div>
 
@@ -75,9 +75,9 @@ function Home() {
 
                 <a
                   href="/about-me"
-                  className="d-flex justify-content-center align-items-center flex-column text-decoration-none text-warning"
+                  className="text-decoration-none text-warning"
                 >
-                  <div className="card bg-secondary">
+                  <div className="card bg-secondary col-2 justify-content-center text-center">
                     <img src={GGProfileAvatar} alt="" width="100px" />
                   </div>
                   More about me
