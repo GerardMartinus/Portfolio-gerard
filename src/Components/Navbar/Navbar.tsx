@@ -33,11 +33,11 @@ const Navbar = () => {
                 Portfolio
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="/games">
                 Games / Achievements
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="/about-me">
                 About Me

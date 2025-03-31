@@ -6,6 +6,17 @@
     
     }
 
+    .right-content > .pop-up{
+        position: absolute;
+        width: calc(100vw - 55vw);
+        right: 25px;
+    
+    }
+
+    .project-content > iframe{
+        width: 100% !important;
+    }
+
 
 }
 
